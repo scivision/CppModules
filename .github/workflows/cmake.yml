@@ -1,0 +1,25 @@
+name: cmake
+
+on:
+  push:
+    paths:
+      - "**.cpp"
+      - "**.ixx"
+      - "**.cmake"
+      - "**/CMakeLists.txt"
+      - ".github/workflows/cmake.yml"
+
+env:
+  CTEST_NO_TESTS_ACTION: error
+  CTEST_PARALLEL_LEVEL: 4
+
+
+jobs:
+
+  windows-msvc:
+    runs-on: windows-latest
+
+    steps:
+    - uses: actions/checkout@v4
+
+    - run: cmake --workflow --preset debug
