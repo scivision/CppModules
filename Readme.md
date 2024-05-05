@@ -2,11 +2,8 @@
 
 [![cmake](https://github.com/scivision/CppModules/actions/workflows/cmake.yml/badge.svg)](https://github.com/scivision/CppModules/actions/workflows/cmake.yml)
 
-C++ modules require recent C++ compilers such as:
-
-* Visual Studio &ge; [16.8](https://devblogs.microsoft.com/cppblog/standard-c20-modules-support-with-msvc-in-visual-studio-2019-version-16-8/)
-* GCC &ge; 14
-* Clang &ge; 16
+C++ modules with CMake require
+[recent C++ compilers](https://cmake.org/cmake/help/latest/manual/cmake-cxxmodules.7.html#compiler-support).
 
 The Ninja generator is required for C++ modules with CMake.
 
